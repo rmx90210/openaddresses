@@ -14,7 +14,7 @@
         "addresses": [
             {
                 "name": "county",
-                "data": "https://data.openaddresses.io/cache/uploads/rmx90210/2026-08-21-uyo8j/richland.geojson",
+                "data": "https://data.openaddresses.io/cache/uploads/rmx90210/2026-08-23-35u6y/richland.geojson",
                 "protocol": "http",
                 "conform": {
                     "format": "geojson",
@@ -39,7 +39,7 @@
         "parcels": [
             {
                 "name": "county",
-                "data": "https://data.openaddresses.io/cache/uploads/rmx90210/2026-08-21-uyo8j/richland.geojson",
+                "data": "https://data.openaddresses.io/cache/uploads/rmx90210/2026-08-23-35u6y/richland.geojson",
                 "protocol": "http",
                 "conform": {
                     "format": "geojson",
