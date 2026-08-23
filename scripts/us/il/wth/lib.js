@@ -31,6 +31,14 @@ function decodeRing(polyText) {
     y += parseInt(coords[i * 2 + 1], 10);
     ring.push(z192LL(x, y));
   }
+  // the site draws these as polylines, not necessarily closed rings - GDAL
+  // rejects an unclosed LinearRing, so close it if the last point didn't
+  // land back on the first
+  if (ring.length >= 2) {
+    const [firstLon, firstLat] = ring[0];
+    const [lastLon, lastLat] = ring[ring.length - 1];
+    if (firstLon !== lastLon || firstLat !== lastLat) ring.push(ring[0]);
+  }
   return ring;
 }
 
